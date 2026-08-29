@@ -1,0 +1,492 @@
+/* =========================================================
+   QUANTUM WEB — RESPONSIVE SYSTEM
+   Responsive.css
+   ========================================================= */
+
+/* =========================================================
+   LARGE LAPTOP / DESKTOP
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .container {
+        width: min(92%, 1100px);
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .hero-title {
+        font-size: clamp(3.5rem, 7vw, 6rem);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    html {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 18px 0;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 90vh;
+        padding: 130px 0 80px;
+    }
+
+    .hero-content {
+        max-width: 600px;
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 9vw, 5rem);
+        line-height: 0.95;
+    }
+
+    .hero-description {
+        max-width: 520px;
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    /* PROJECTS */
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .project-image {
+        height: 260px;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    /* SERVICES */
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 16px 0;
+    }
+
+    .navbar-inner {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: flex;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+        padding: 120px 0 80px;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero-title {
+        font-size: clamp(2.8rem, 15vw, 4.5rem);
+        letter-spacing: -0.06em;
+    }
+
+    .hero-subtitle {
+        justify-content: center;
+        font-size: 0.75rem;
+        letter-spacing: 0.18em;
+    }
+
+    .hero-description {
+        margin: 25px auto 0;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-buttons a,
+    .hero-buttons button {
+        width: min(100%, 280px);
+    }
+
+    /* HERO VISUAL */
+
+    .hero-visual {
+        margin-top: 60px;
+    }
+
+    /* SECTION */
+
+    section {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        font-size: clamp(2.2rem, 10vw, 3.5rem);
+    }
+
+    .section-description {
+        font-size: 0.95rem;
+    }
+
+    /* PROJECTS */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .project-card {
+        border-radius: 18px;
+    }
+
+    .project-image {
+        height: 240px;
+    }
+
+    .project-content {
+        padding: 22px;
+    }
+
+    .project-title {
+        font-size: 1.4rem;
+    }
+
+    /* SERVICES */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .service-card {
+        padding: 25px;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    /* STATS */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    /* CONTACT */
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 13px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    /* NAVBAR */
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    /* HERO */
+
+    .hero {
+        padding-top: 105px;
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 17vw, 3.8rem);
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    /* BUTTONS */
+
+    .btn {
+        min-height: 50px;
+        padding: 0 22px;
+        font-size: 0.8rem;
+    }
+
+    /* PROJECT CARD */
+
+    .project-image {
+        height: 210px;
+    }
+
+    .project-content {
+        padding: 18px;
+    }
+
+    .project-meta {
+        font-size: 0.7rem;
+    }
+
+    /* STATS */
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat-card {
+        padding: 20px 10px;
+    }
+
+    .stat-number {
+        font-size: 1.7rem;
+    }
+
+    /* CONTACT */
+
+    .contact-card {
+        padding: 25px 18px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .hero-description {
+        font-size: 0.85rem;
+    }
+
+    .project-image {
+        height: 190px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   LANDSCAPE MOBILE
+   ========================================================= */
+
+@media (max-height: 550px) and (orientation: landscape) {
+
+    .hero {
+        min-height: auto;
+        padding: 100px 0 60px;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   ========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+    .project-card:hover {
+        transform: none;
+    }
+
+    .service-card:hover {
+        transform: none;
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+
+    /*
+       Touch devices don't have real hover.
+       Keep interactions clean instead of
+       leaving cards stuck in hover state.
+    */
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@media print {
+
+    .navbar,
+    .mobile-menu-button,
+    .hero-buttons,
+    .contact-form,
+    footer {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    section {
+        padding: 30px 0;
+        break-inside: avoid;
+    }
+
+}
